@@ -1,0 +1,150 @@
+.hotItem {
+  width: 100%;
+  overflow: hidden;
+  /* display: none; */
+}
+
+.hotItem > .hotTop {
+  height: 50px;
+}
+
+.hotTop > .title {
+  /* display: inline-block; */
+  /* padding: 0 15px; */
+}
+.hotTop > .title {
+  float: left;
+  padding-left: 15px;
+}
+.hotTop > h2:last-child {
+  float: right;
+}
+.hotWrap {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.hotWrap:last-child {
+  margin-bottom: 40px;
+}
+.hotWrap > li {
+  width: calc(20% - 10px);
+  height: 330px;
+  border: 1px solid black;
+  text-align: center;
+  /* padding: 10px; */
+  position: relative;
+  margin: 5px 3px;
+}
+
+.hotWrap > li img {
+  width: 100%;
+}
+
+.hotWrap > li:hover {
+  border: 1px solid transparent;
+}
+
+.hotWrap > li::before,
+.hotWrap > li::after {
+  content: "";
+  display: block;
+  background: var(--green);
+  transition: 0.3s;
+  position: absolute;
+}
+.hotWrap > li::before {
+  width: 0%;
+  height: 5px;
+  top: 0px;
+  left: 0;
+}
+.hotWrap > li::after {
+  width: 0%;
+  height: 5px;
+  bottom: 0px;
+  right: 0%;
+}
+
+.hotWrap > li > a {
+  height: 330px;
+  position: relative;
+  display: block;
+}
+
+.hotWrap > li > a::before,
+.hotWrap > li > a::after {
+  content: "";
+  display: block;
+  background: var(--green);
+  position: absolute;
+  transition: 0.3s;
+}
+.hotWrap > li > a::before {
+  width: 5px;
+  height: 0%;
+  top: 0;
+  right: 0;
+}
+.hotWrap > li > a::after {
+  width: 5px;
+  height: 0%;
+  bottom: 0;
+  left: 0;
+}
+
+.hotWrap > li:hover::before {
+  width: 100%;
+}
+
+.hotWrap > li:hover::after {
+  transition-delay: 0.6s;
+  width: 100%;
+}
+.hotWrap > li > a:hover::before {
+  height: 100%;
+  transition-delay: 0.3s;
+}
+.hotWrap > li > a:hover::after {
+  height: 100%;
+  transition-delay: 0.9s;
+}
+
+.hotWrap > li img {
+  width: 100%;
+  margin: 40px 0 20px;
+}
+.hotWrap > li > a > .itemTitle {
+  line-height: 1.3;
+}
+
+.price {
+  position: absolute;
+  width: 75px;
+  line-height: 1.5;
+  text-align: center;
+  bottom: 10px;
+  right: 0px;
+}
+
+.price > span {
+  float: left;
+  padding: 0 5px;
+}
+.price > span:first-child {
+  background-color: var(--green);
+  color: white;
+  text-transform: uppercase;
+}
+
+.price > span:last-child {
+  background-color: rgb(235, 235, 235);
+  color: var(--green);
+}
+.more {
+  float: right;
+  padding-right: 20px;
+}
+.more:hover > a {
+  color: var(--green);
+}

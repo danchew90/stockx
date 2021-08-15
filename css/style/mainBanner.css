@@ -1,0 +1,72 @@
+.mainBanner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 350px;
+  margin-top: 65px;
+}
+.banner {
+  width: 300%;
+  height: 100%;
+}
+.banner > li {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+}
+
+.banner > li > a {
+  width: 100%;
+  display: block;
+  height: 100%;
+  background-position-x: 48%;
+}
+.banner > .b1 > a {
+  background-image: url(../../images/mainBanner1.jpg);
+}
+.banner > .b2 > a {
+  background-image: url(../../images/mainBanner1.jpg);
+}
+.banner > .b3 > a {
+  background-image: url(../../images/mainBanner1.jpg);
+}
+.controlWrap {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 24px;
+}
+
+.controlWrap > .text {
+  float: left;
+  margin-right: 10px;
+}
+.controlWrap > .btn {
+  float: right;
+}
+.controlWrap > .btn > li {
+  float: left;
+  margin-left: 20px;
+  width: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.controlWrap > .btn a {
+  display: block;
+  text-indent: -9999px;
+}
+
+.left {
+  background: url(../../images/arrow-prev.png);
+}
+.right {
+  background: url(../../images/arrow-next.png);
+}
+.playStop {
+  background: url(../../images/arrow-pause.png);
+}
+.on {
+  background: url(../../images/arrow-play.png);
+}

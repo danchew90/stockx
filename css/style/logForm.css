@@ -1,0 +1,312 @@
+.logDisplay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* position: absolute; */
+  position: relative;
+  display: none;
+}
+
+.logBox {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  top: 20%;
+  left: 10%;
+  border-radius: 20px;
+  box-shadow: 5px 5px black;
+}
+.logFormColumn {
+  height: 100%;
+
+  /* background-color: royalblue; */
+  box-sizing: border-box;
+}
+
+.logFormColumn:first-child {
+  position: relative;
+  float: left;
+  background-color: #f4f4f4;
+
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 20%;
+}
+.logFormColumn:last-child {
+  float: right;
+  background-color: var(--green);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 80%;
+}
+
+.logBtn {
+  position: absolute;
+  right: 0;
+  top: 20%;
+  width: 50%;
+}
+.logBtn > li {
+  /* background-color: white; */
+  text-align: right;
+  width: 100%;
+  color: var(--green);
+  padding-right: 0%;
+  font-size: 100%;
+  cursor: pointer;
+}
+li.display {
+  background-color: var(--green);
+  color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.logDisplayWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.logDisplayWrap > li {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.loginForm {
+  background-color: var(--green);
+}
+.signForm {
+  /* background-color: yellowgreen; */
+}
+li.show {
+  display: block;
+}
+.logBtn > li {
+  position: relative;
+}
+.logBtn li b:nth-child(1) {
+  position: absolute;
+  top: -20px;
+  height: 20px;
+  width: 100%;
+  background-color: var(--green);
+  right: 0;
+}
+.logBtn li b:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+  border-bottom-right-radius: 20px;
+}
+.logBtn li b:nth-child(2) {
+  position: absolute;
+  bottom: -20px;
+  height: 20px;
+  width: 100%;
+  background-color: var(--green);
+  right: 0;
+}
+.logBtn li b:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+  border-top-right-radius: 20px;
+}
+
+.logBtn li b {
+  display: none;
+}
+.logBtn li.display b {
+  display: block;
+}
+.logBtn > li {
+  cursor: pointer;
+}
+.logCloseBtn {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 10px;
+}
+
+.signForm,
+.loginForm {
+  text-align: center;
+  display: flex;
+  color: white;
+}
+
+.logImg {
+  margin: 10% 0;
+}
+
+.logColumn > input {
+  width: 50%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+}
+.logColumn > input:focus {
+  outline: none;
+}
+
+.logColumn:nth-child(3) {
+  position: relative;
+  /* background: wheat; */
+  width: 100%;
+}
+.changeShow {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  z-index: 100;
+  transform: translateY(-50%);
+  /* background: yellow; */
+  border: 1px solid #ffeb85;
+  color: white;
+  height: 20px;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 8px;
+  border-radius: 20px;
+}
+
+.logColumn:nth-child(4) {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 24%;
+  text-align: center;
+}
+.remember > input {
+  background: #ef6253;
+}
+.remember > span {
+  font-size: 15px;
+}
+.forgot > a {
+  /* display: block; */
+  font-size: 15px;
+  color: #ef6253;
+}
+
+.logColumn input {
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.logColumn:nth-child(2) > input,
+.logColumn:nth-child(3) > input {
+  background: #d8d8d8;
+}
+.logColumn:nth-child(2) > input::placeholder,
+.logColumn:nth-child(3) > input::placeholder {
+  color: white;
+}
+
+.logColumn:nth-child(2) > input:focus,
+.logColumn:nth-child(3) > input:focus {
+  background: white;
+}
+.logColumn:last-child > input {
+  background: #ef6253;
+  color: white;
+  font-size: 20px;
+}
+
+.signForm > span {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.signForm > form {
+  display: flex;
+  flex-direction: column;
+  background: lightblue;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.signForm input,
+.signForm select {
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  border: none;
+  background: #d8d8d8;
+  padding-left: 15px;
+}
+.signForm input::placeholder,
+.signForm option {
+  color: white;
+}
+
+.signForm input:focus,
+.signForm select {
+  background: white;
+  outline: none;
+}
+.signColumn {
+  position: relative;
+}
+
+.signColumn > i {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+}
+
+.signColumn > button {
+  background: #ef6253;
+  width: 15%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 70%;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.email1 {
+  color: white;
+}
+
+.signColumn:last-child {
+  /* background: black; */
+  overflow: hidden;
+  padding-left: 35%;
+}
+.signColumn:last-child > div {
+  width: 20%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  float: left;
+  font-size: 70%;
+  font-weight: 500;
+}
+
+.cancleBtn {
+  background: #ef6253;
+  margin-right: 10px;
+}
+.doneBtn {
+  background: #41b979;
+}

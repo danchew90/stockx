@@ -1,0 +1,136 @@
+header {
+  width: 74.5%;
+  position: fixed;
+  line-height: 60px;
+  /* background-color: rgba(204, 133, 133, 0.705); */
+  /* padding: 10px 0px; */
+  height: 60px;
+  border-bottom: 2px solid var(--green);
+  box-shadow: 0 3px 5px var(--green);
+  /* position: fixed; */
+  background-color: #fff;
+  z-index: 10000;
+}
+.logo {
+  float: left;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+nav {
+  float: left;
+  margin-left: 20px;
+}
+
+#nav > li {
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  text-align: center;
+  height: 60px;
+  /* background-color: blue; */
+}
+#nav > li > a {
+  transition: 0.3s;
+}
+#nav > li:hover > a {
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: var(--green);
+}
+#nav > li:hover > .sub {
+  display: block;
+}
+
+#nav > li > .sub {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  font-size: 18px;
+}
+.sub > li {
+  line-height: 2;
+  border-bottom: 1px solid var(--gray);
+  /* padding: 0 10px; */
+}
+.sub > li:hover > a {
+  background-color: #ddd;
+  display: block;
+  color: white;
+}
+.log {
+  float: right;
+}
+/* .logWrap {
+  float: right;
+} */
+.logWrap > li {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+.logWrap > li > a {
+  transition: 0.3s;
+}
+.logWrap > li:hover > a {
+  display: block;
+  background-color: var(--green);
+  color: white;
+}
+.hamBtn,
+.mNavWrap {
+  display: none;
+}
+
+.mNavWrap {
+  background-color: var(--green);
+  width: 50%;
+  height: 100vh;
+  margin-left: 100%;
+}
+.mNavWrap a {
+  color: white;
+}
+.mSub {
+  display: none;
+  width: 100%;
+  transition: 0.5s;
+}
+.mShow {
+  display: block;
+}
+.mSub > li {
+  background-color: white;
+  width: 100%;
+  border-bottom: 1px solid var(--green);
+}
+.mSub > li > a {
+  color: var(--green);
+  display: block;
+  text-indent: 30px;
+}
+.mNav {
+  width: 100%;
+}
+.mNav > li {
+  width: 100%;
+  /* background-color: blue; */
+  border-bottom: 1px solid white;
+}
+.mNav > li > a {
+  display: block;
+  text-indent: 15px;
+}
+
+.mLogWrap {
+  width: 100%;
+  text-align: center;
+}
+.mLog {
+  padding: 50px 0;
+}
+.mLog > li {
+  display: inline-block;
+  width: 45%;
+}

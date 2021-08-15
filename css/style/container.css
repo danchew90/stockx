@@ -1,0 +1,144 @@
+.container {
+  width: 100%;
+
+  height: 200px;
+  box-sizing: border-box;
+  /* background-color: cornflowerblue; */
+ 
+}
+
+.container > div {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  /* padding: 20px 10px; */
+  /* background-color: coral; */
+}
+.container > .category {
+  float: left;
+  /* border: 1px solid black; */
+  position: relative;
+}
+
+.category > .title {
+  /* position: absolute; */
+  margin: 10px 0 0 10px;
+}
+
+.container > .category > .categoryWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  /* background-color: cornflowerblue; */
+}
+.categoryWrap > li > a {
+  position: relative;
+}
+/* .catetoryWrap > li > a::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: black;
+  top: 0;
+} */
+.container .categoryWrap > li {
+  float: left;
+  margin-left: 40px;
+}
+
+.container > .calender {
+  float: right;
+  /* width: 100%; */
+  position: relative;
+  overflow: hidden;
+}
+
+.calenderWrap {
+  width: 300%;
+  height: 100%;
+}
+.calender > .title {
+  position: absolute;
+  z-index: 1000;
+  top: 10px;
+  left: 10px;
+}
+.calenderWrap > li {
+  width: 33.33%;
+  height: 100%;
+  position: relative;
+  /* background-color: tomato; */
+  float: left;
+}
+
+.dayBox {
+  width: 75px;
+  position: absolute;
+  line-height: 1.5;
+  top: 10px;
+  right: 0;
+  text-align: center;
+}
+
+.dayBox > span {
+  float: left;
+  padding: 0 5px;
+}
+.dayBox > span:first-child {
+  background-color: var(--green);
+  color: white;
+  text-transform: uppercase;
+}
+
+.dayBox > span:last-child {
+  background-color: white;
+  color: var(--green);
+}
+
+.cTitle {
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+}
+
+.cImg {
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.calenderCon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.calenderCon > li > a {
+  display: block;
+  height: 48px;
+  width: 48px;
+  line-height: 48px;
+  text-indent: -9999px;
+}
+
+.leftCal {
+  float: left;
+}
+
+.leftCal > a {
+  background: url(../../images/prev.png);
+}
+.rightCal {
+  float: right;
+}
+
+.rightCal > a {
+  background: url(../../images/next.png);
+}

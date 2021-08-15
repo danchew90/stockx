@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockX</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b24e923602.js" crossorigin="anonymous"></script>
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="jquery/banner.js"></script>
+    <script src="jquery/calender.js"></script>
+    <script src="jquery/stock.js"></script>
+    <script src="jquery/footer.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 class="logo"><a href="index.html"><img src="images/StockX_Logo.png" alt=""></a></h1>
+            <nav>
+                <ul id="nav">
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Browse</a>
+                        <ul class="sub">
+                            <li><a href="#">Sneakers</a></li>
+                            <li><a href="#">Streetwear</a></li>
+                            <li><a href="#">Collectibless</a></li>
+                            <li><a href="#">Handbags</a></li>
+                            <li><a href="#">Watches</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+            <div class="log">
+                <ul class="logWrap">
+                    <li><a href="javascript:void(0);">Login</a></li>
+                    <li><a href="javascript:void(0);">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="logDisplay">
+                <div class="logBox">
+                    <div class="logFormColumn">
+                        <ul class="logBtn">
+                            <li class="display btnBox_1">Login <b></b><b></b></li>
+                            <li class="btnBox_2">Sign up<b></b><b></b></li>
+                        </ul>
+                    </div>
+                    <div class="logFormColumn">
+                        <a href="javascript:void(0);" class="logCloseBtn"><img src="images/close_white.png" alt=""></a>
+                        <ul class="logDisplayWrap">
+                            <li class="loginForm show">
+                                <img src="images/StockX_Logo_w.png" alt="" class="logImg">
+                                <div class="logColumn">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" required placeholder="User Id">
+                                </div>
+                                <div class="logColumn">
+                                    <i class="fas fa-unlock"></i>
+                                    <input type="password" required placeholder="PassWord" class="password">
+                                    <a href="#" class="changeShow">show</a>
+                                </div>
+                                <div class="logColumn">
+                                    <div class="remember">
+                                        <input type="checkbox">
+                                        <span>Remember my Id</span>
+                                    </div>
+                                    <div class="forgot">
+                                        <a href="#">Forgot Password</a>
+                                    </div>
+                                </div>
+                                <div class="logColumn">
+                                    <input type="submit" value="Log in">
+                                </div>
+                            </li>
+                            <li class="signForm">
+                                <span>Sign Up</span>
+                                <div class="signModule">
+
+                                    <div class="signColumn">
+                                        <i class="fas fa-user"></i>
+                                        <input type="text" placeholder="Id" class="idArea">
+                                        <button class="repeat">중복확인</button>
+                                    </div>
+                                    <div class="signColumn">
+                                        <i class="fas fa-unlock"></i>
+                                        <input type="password" placeholder="Password">
+                                    </div>
+                                    <div class="signColumn">
+                                        <i class="fas fa-unlock"></i>
+                                        <input type="password" placeholder="Check Password">
+                                    </div>
+                                    <div class="signColumn">
+                                        <i class="far fa-envelope"></i>
+                                        <form name="join">
+                                            <input type="text" name="email1" value="이메일" onfocus="this.value='';"
+                                                class="email1">
+                                            <input type="text" name="email2" value="" disabled class="email2">
+                                            <select name="email" onchange="email_change()" class="email">
+                                                <option value="0">선택하세요</option>
+                                                <option value="9">직접입력</option>
+                                                <option value="naver.com">naver.com</option>
+                                                <option value="nate.com">nate.com</option>
+                                            </select>
+                                        </form>
+                                        <button class="repeat">중복확인</button>
+                                    </div>
+                                    <div class="signColumn">
+                                        <div class="cancleBtn">돌아가기</div>
+                                        <div class="doneBtn">가입</div>
+                                    </div>
+                                </div>
+
+
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="hamBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mNavWrap">
+                <div class="mLogWrap">
+                    <ul class="mLog">
+                        <li><a href="javascript:void(0);" class="mLog_log">Login</a></li>
+                        <li><a href="javascript:void(0);" class="mLog_sign">Sign up</a></li>
+                    </ul>
+                </div>
+                <ul class="mNav">
+                    <li><a href="#">News</a></li>
+                    <li class="mBtn"><a href="#">Browse</a>
+                        <ul class="mSub">
+                            <li><a href="#">Sneakers</a></li>
+                            <li><a href="#">Streatwear</a></li>
+                            <li><a href="#">Collectibless</a></li>
+                            <li><a href="#">HandBags</a></li>
+                            <li><a href="#">Watches</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="searchBtn">
+            <div class="searchWrap">
+                <div class="searchBox">
+                    <input type="text" placeholder="Search item...">
+                </div>
+                <div class="iconBtn">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="mainBanner">
+            <ul class="banner">
+                <li class="b1"><a href="#"></a></li>
+                <li class="b2"><a href="#"></a></li>
+                <li class="b3"><a href="#"></a></li>
+            </ul>
+            <div class="controlWrap">
+                <div class="text">
+                    <span class="count">0</span>
+                    /
+                    <span class="total">0</span>
+                </div>
+                <ul class="btn">
+                    <li class="left"><a href="javascript:void(0);">left</a></li>
+                    <li class="right"><a href="javascript:void(0);">right</a></li>
+                    <li class="playStop"><a href="javascript:void(0);">play/stop</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="category">
+                <h3 class="title">category</h3>
+                <ul class="categoryWrap">
+                    <li><a href="#"><img src="images/top.png" alt="top"></a></li>
+                    <li><a href="#"><img src="images/shoes.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/cap.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="calender">
+                <h3 class="title">Release Calendar</h3>
+                <ul class="calenderWrap">
+                    <li>
+                        <a href="#">
+                            <div class="dayBox">
+                                <span>june</span>
+                                <span>3</span>
+                            </div>
+                            <div class="cTitle">Air Jordan 1 Retro High OG Court Purple White</div>
+                            <div class="cImg"><img src="images/calander_01.png" alt=""></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="dayBox">
+                                <span>june</span>
+                                <span>3</span>
+                            </div>
+                            <div class="cTitle">Air Jordan 1 Retro High OG Court Purple White</div>
+                            <div class="cImg"><img src="images/calander_01.png" alt=""></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="dayBox">
+                                <span class="month">june</span>
+                                <span class="date">3</span>
+                            </div>
+                            <div class="cTitle">Air Jordan 1 Retro High OG Court Purple White</div>
+                            <div class="cImg"><img src="images/calander_01.png" alt=""></div>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="calenderCon">
+                    <li class="leftCal"><a href="javascript:void(0);"> left </a></li>
+                    <li class="rightCal"><a href="javascript:void(0);"> right </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hotItem">
+            <div class="hotTop">
+                <h2 class="title">Hot Item</h2>
+                <p class="more"><a href="#">more +</a></p>
+            </div>
+            <ul class="hotWrap">
+                <li>
+                    <a href="item.html">
+                        <img src="images/item_1.png" alt="">
+                        <p class="itemTitle">Jordan 1 Retro High White University Blue Black</p>
+                        <div class="price">
+                            <span>249</span>
+                            <span>$</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="item.html">
+                        <img src="images/item_2.png" alt="">
+                        <p class="itemTitle">adidas Yeezy 700 V3 Safflower</p>
+                        <div class="price">
+                            <span>303</span>
+                            <span>$</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="item.html">
+                        <img src="images/item_3.png" alt="">
+                        <p class="itemTitle">Jordan 11 Retro Low Legend Blue</p>
+                        <div class="price">
+                            <span>214</span>
+                            <span>$</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="item.html">
+                        <img src="images/item_4.png" alt="">
+                        <p class="itemTitle">Nike Dunk High Dark Sulfur (W)</p>
+                        <div class="price">
+                            <span>158</span>
+                            <span>$</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="item.html">
+                        <img src="images/item_5.png" alt="">
+                        <p class="itemTitle">Nike Dunk High Dark Sulfur (W)</p>
+                        <div class="price">
+                            <span>269</span>
+                            <span>$</span>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="item.html">
+                        <img src="images/item_1.png" alt="">
+                        <p class="itemTitle">Jordan 1 Retro High White University Blue Black</p>
+                        <div class="price">
+                            <span>249</span>
+                            <span>$</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="item.html">
+                        <img src="images/item_2.png" alt="">
+                        <p class="itemTitle">adidas Yeezy 700 V3 Safflower</p>
+                        <div class="price">
+                            <span>303</span>
+                            <span>$</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="item.html">
+                        <img src="images/item_3.png" alt="">
+                        <p class="itemTitle">Jordan 11 Retro Low Legend Blue</p>
+                        <div class="price">
+                            <span>214</span>
+                            <span>$</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="item.html">
+                        <img src="images/item_4.png" alt="">
+                        <p class="itemTitle">Nike Dunk High Dark Sulfur (W)</p>
+                        <div class="price">
+                            <span>158</span>
+                            <span>$</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="item.html">
+                        <img src="images/item_5.png" alt="">
+                        <p class="itemTitle">Nike Dunk High Dark Sulfur (W)</p>
+                        <div class="price">
+                            <span>269</span>
+                            <span>$</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="stockModule">
+            <div class="stock">
+                <ul class="stockWrap">
+                    <li>
+                        <a href="#">AF1RE-WBR</a>
+                        <p>$146</p>
+                    </li>
+                    <li>
+                        <a href="#">M95-SBMN</a>
+                        <p>$289</p>
+                    </li>
+                    <li>
+                        <a href="#">TMB-TIEHLSPBBK</a>
+                        <p>$95</p>
+                    </li>
+                    <li>
+                        <a href="#">NK-NIABLWBSB</a>
+                        <p>$168</p>
+                    </li>
+                    <li>
+                        <a href="#">RBK-REFHDWWGGW</a>
+                        <p>$112</p>
+                    </li>
+                    <li>
+                        <a href="#">AF1RE-WBR</a>
+                        <p>$146</p>
+                    </li>
+                    <li>
+                        <a href="#">M95-SBMN</a>
+                        <p>$289</p>
+                    </li>
+                    <li>
+                        <a href="#">TMB-TIEHLSPBBK</a>
+                        <p>$95</p>
+                    </li>
+                    <li>
+                        <a href="#">NK-NIABLWBSB</a>
+                        <p>$168</p>
+                    </li>
+                    <li>
+                        <a href="#">RBK-REFHDWWGGW</a>
+                        <p>$112</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footTop clearFix">
+            <ul class="quickWrap clearFix">
+                <li>
+                    <span>Air Jordan</span>
+                    <ul class="quick">
+                        <li><a href="#">Air Jordan 1</a></li>
+                        <li><a href="#">Jordan Golf Shoes</a></li>
+                        <li><a href="#">Air Jordan 4</a></li>
+                        <li><a href="#">Air Jordan 11</a></li>
+                        <li><a href="#">Air Jordan 11 Low</a></li>
+                        <li><a href="#">Jordan 1 Mid</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>adidas</span>
+                    <ul class="quick">
+                        <li><a href="#">Yeezy Boost 350</a></li>
+                        <li><a href="#">Yeezy Boost 350 V2</a></li>
+                        <li><a href="#">Yeezy Boost 700 V3</a></li>
+                        <li><a href="#">Yeezy Boost 380</a></li>
+                        <li><a href="#">QNTM</a></li>
+                        <li><a href="#">NMD</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Supreme</span>
+                    <ul class="quick">
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Supreme The North Face</a></li>
+                        <li><a href="#">Bottoms</a></li>
+                        <li><a href="#">Hoodies</a></li>
+                        <li><a href="#">Supreme Nike</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Recent Updates</span>
+                    <ul class="quick">
+                        <li><a href="#">The Drop List</a></li>
+                        <li><a href="#">Most Expensive LEGO Sets</a></li>
+                        <li><a href="#">Yeezy 350 V2 Buyer's Guide</a></li>
+                        <li><a href="#">Xbox Series X</a></li>
+                        <li><a href="#">PS5</a></li>
+                        <li><a href="#">Eevee Heroes Pokémon TCG Preview</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Popular </span>
+                    <ul class="quick">
+                        <li><a href="#">Jordan 3 Rust Pink (W)</a></li>
+                        <li><a href="#">Yeezy Foam RNNR Mineral Blue</a></li>
+                        <li><a href="#">Nike Dunk High Lakers</a></li>
+                        <li><a href="#">Nike AF-1 Experimental UsPS</a></li>
+                        <li><a href="#">Nike SB Dunk Low P Rod</a></li>
+                        <li><a href="#">Nike Dunk Low Varsity Green</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footBottom">
+            <div class="bTop clearFix">
+                <div class="countryModule">
+                    <div class="column">
+                        <div class="boxColumn">
+                            <ul class="country">
+                                <li class="country1"><a href="javascript:void(0)">South Korea</a></li>
+                                <li class="country2"><a href="javascript:void(0)">America</a></li>
+                                <li class="country3"><a href="javascript:void(0)">China</a></li>
+                                <li class="country4"><a href="javascript:void(0)">Jappan</a></li>
+                                <li class="country5"><a href="javascript:void(0)">France</a></li>
+                            </ul>
+                            <div class="upDown">
+                                <div><a href="javascript:void(0)" class="up"><img src="images/up.png" alt=""> </a></div>
+                                <div><a href="javascript:void(0)" class="down"><img src="images/down.png" alt=""> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="boxColumn">
+                            <ul class="lang">
+                                <li class="lang1"><a href="javascript:void(0)">korean</a></li>
+                                <li class="lang2"><a href="javascript:void(0)">english</a></li>
+                                <li class="lang3"><a href="javascript:void(0)">Chinese</a></li>
+                                <li class="lang4"><a href="javascript:void(0)">japanes</a></li>
+                                <li class="lang5"><a href="javascript:void(0)">French</a></li>
+                            </ul>
+                            <div class="upDown">
+                                <div><a href="javascript:void(0)" class="up"><img src="images/up.png" alt=""> </a></div>
+                                <div><a href="javascript:void(0)" class="down"><img src="images/down.png" alt=""> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="boxColumn">
+                            <ul class="money">
+                                <li class="money1"><a href="javascript:void(0)">₩ won</a></li>
+                                <li class="money2"><a href="javascript:void(0)">$ usd</a></li>
+                                <li class="money3"><a href="javascript:void(0)">¥ cny</a></li>
+                                <li class="money4"><a href="javascript:void(0)">¥ jpy</a></li>
+                                <li class="money5"><a href="javascript:void(0)">€ eur</a></li>
+                            </ul>
+                            <div class="upDown">
+                                <div><a href="javascript:void(0)" class="up"><img src="images/up.png" alt=""> </a></div>
+                                <div><a href="javascript:void(0)" class="down"><img src="images/down.png" alt=""> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="proud">Proudly Built in Detroit</span>
+            </div>
+            <div class="footMenu">
+                <ul class="menuWrap">
+                    <li><a href="#">HELP</a></li>
+                    <li><a href="#">HOW IT WORKS</a></li>
+                    <li><a href="#">PRIVACY</a></li>
+                    <li><a href="#">TERMS</a></li>
+                    <li><a href="#">JOBS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">PRODUCT SUGGESTION</a></li>
+                    <li><a href="#">PRESS ACCESSIBILITY</a></li>
+                    <li><a href="#">STATEMENT</a></li>
+                </ul>
+            </div>
+            <div class="sns">
+                <ul class="snsWrap">
+                    <li><a href="#">twitter</a></li>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">youtube</a></li>
+                </ul>
+            </div>
+            <small>&copy;2021 StockX. All Rights Reserved.</small>
+        </div>
+    </footer>
+    <script src="jquery/mHeader.js"></script>
+    <script src="jquery/log.js"></script>
+    <script src="jquery/searchBtn.js"></script>
+</body>
+<div id="splash-screen">
+    <div class="splashBox">
+        <img src="images/big_logo.png" alt="">
+        <h1>Loading</h1>
+    </div>
+</div>
+
+</html>

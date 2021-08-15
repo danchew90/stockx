@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+  footer {
+    bottom: 0;
+    width: 100%;
+  }
+}

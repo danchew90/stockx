@@ -1,0 +1,219 @@
+.footTop {
+  width: 100%;
+  height: 70%;
+  /* background: royalblue; */
+  font-size: 15px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  border-bottom: 3px solid #999;
+}
+.footTop > .quickWrap {
+  height: 100%;
+}
+.quickWrap > li {
+  width: 100%;
+  height: 125px;
+  margin: 5px auto;
+  /* background: chocolate; */
+}
+.quickWrap > li > span {
+  color: #666;
+  float: left;
+}
+.quick {
+  float: right;
+  margin-left: 60px;
+}
+.quick > li {
+  line-height: 1;
+}
+.quick > li > a {
+  color: #999;
+  display: block;
+  width: 125px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* background: chocolate; */
+}
+.quick > li:hover > a {
+  color: var(--green);
+}
+/* footBottom */
+footer > .footBottom {
+  width: 100%;
+  text-align: center;
+}
+footer > .footBottom > .bTop {
+  /* margin: 0 auto; */
+  /* display: flex; */
+  width: 100%;
+}
+
+.bTop > .countryModule {
+  display: flex;
+  float: left;
+  margin: 10px 0 0 10px;
+}
+
+.bTop > .countryModule > .column {
+  width: 30%;
+  height: 20px;
+  position: relative;
+}
+.bTop > .countryModule > .column:first-child {
+  width: 50%;
+}
+.column > .boxColumn {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.boxColumn > ul {
+  width: 100%;
+  height: 100%;
+}
+.boxColumn > ul > li {
+  width: 100%;
+  height: 100%;
+}
+
+.boxColumn > ul > li > a {
+  text-align: center;
+  display: block;
+  height: 100%;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.3;
+}
+.country {
+  width: 150%;
+}
+.country > li {
+  width: 150%;
+}
+.country > li:first-child > a {
+  letter-spacing: -0.08em;
+}
+
+.country > li > a,
+.money > li > a {
+  background: var(--green);
+  color: white;
+}
+.lang > li > a {
+  background: white;
+  color: var(--green);
+}
+
+.upDown {
+  display: none;
+}
+.upDown a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.up {
+  top: -100%;
+}
+.down {
+  bottom: -120%;
+}
+
+.bTop > .proud {
+  font-size: 15px;
+  float: right;
+  margin: 10px 10px 0 0;
+  color: #999;
+}
+
+.footMenu {
+  text-align: center;
+}
+.footMenu > .menuWrap {
+  width: 90%;
+  /* background: chartreuse; */
+  margin: 30px auto 15px;
+}
+
+.footMenu > .menuWrap > li {
+  display: inline-block;
+  margin-left: 5px;
+}
+.footMenu > .menuWrap > li > a {
+  color: #999;
+  font-size: 15px;
+  position: relative;
+  padding-right: 10px;
+}
+.menuWrap > li > a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #999;
+  top: 50%;
+  right: 0;
+  transform: translateX(-50%);
+}
+.menuWrap > li:last-child > a::after {
+  display: none;
+}
+.footMenu > .menuWrap > li:hover > a {
+  color: var(--green);
+  font-weight: 500;
+}
+
+.sns {
+  margin: 30px 0;
+}
+.snsWrap > li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.snsWrap > li > a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  transition: 0.4s;
+}
+
+.snsWrap > li:first-child > a {
+  background: url(../../images/iconmonstr-twitter-1-32.png);
+}
+.snsWrap > li:first-child:hover > a {
+  background: url(../../images/iconmonstr-twitter-1-32hover.png);
+}
+
+.snsWrap > li:nth-child(2) > a {
+  background: url(../../images/iconmonstr-facebook-1-32.png);
+}
+.snsWrap > li:nth-child(2):hover > a {
+  background: url(../../images/iconmonstr-facebook-1-32hover.png);
+}
+
+.snsWrap > li:nth-child(3) > a {
+  background: url(../../images/iconmonstr-instagram-11-32.png);
+}
+.snsWrap > li:nth-child(3):hover > a {
+  background: url(../../images/iconmonstr-instagram-11-32hover.png);
+}
+
+.snsWrap > li:nth-child(4) > a {
+  background: url(../../images/iconmonstr-youtube-6-32.png);
+}
+.snsWrap > li:nth-child(4):hover > a {
+  background: url(../../images/iconmonstr-youtube-6-32hover.png);
+}
+
+small {
+  font-size: 15px;
+  color: #999;
+}
